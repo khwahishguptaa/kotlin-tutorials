@@ -1,0 +1,46 @@
+fun main()
+{
+  var rain=true
+    var result= !rain
+    println(result)
+}
+
+here as the rain is true so in result we put the opposite value of rain which is false 
+
+  var result= !!rain
+if we write it like this then firsrly result will take the value of !rain which becomes false then due to another ! the false again becomes true
+
+fun main()
+{
+var x = 10
+    var y = 10
+    var result = if(x>y){
+    "x is greater than y"}
+    else if(x<y){
+        "x is smaller than y"
+    }
+    else{
+        "x is equal to y"
+    }
+    println(result)
+}
+
+another way of using if else
+
+fun main()
+{
+var number=2
+    for(i in 1..10){
+        println("$number   *   $i  =  ${number*i}")
+    }
+    
+}
+
+// ARRAY
+  fun main(){
+    var arr= arrayOf(1,2,3)
+    for((i,e) in arr.withIndex())
+    {
+        println("$i  $e")
+    }
+}
