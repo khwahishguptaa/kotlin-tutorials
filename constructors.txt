@@ -76,3 +76,21 @@ class Car(val name:String , val tyres:Int)
        
     }
 }
+
+//default constructor-> here when we made no constructora default constructor is automatically called in the given code our class does not accept any parameters so we does not pass any value here we pass value for the function
+fun main(){
+    val ob =Calculator()
+   
+     println(ob.add(2,3))
+      println(ob.multiply(2,3))
+}
+class Calculator{
+    fun add(num1 :Int , num2:Int):Int
+    {
+        return num1+num2
+    }
+     fun multiply(num1 :Int , num2:Int):Int
+    {
+        return num1*num2
+    }
+}
