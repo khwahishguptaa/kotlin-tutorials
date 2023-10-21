@@ -1,0 +1,78 @@
+//to make a constructor 
+fun main(){
+ 
+  val p1=Person()
+  println(p1.name)
+  println(p1.age)
+}
+class Person()
+{
+    val name:string="neil"
+    var age:Int=21
+}
+
+
+//primary constructor with arguments
+fun main(){
+ 
+  val p1=Person("neil" , 21)
+  println(p1.name)
+  println(p1.age)
+}
+class Person(name:String , age:Int)
+{
+    val name:String=name
+    var age:Int=age
+}
+
+
+//benefits of primary constructor with arguments
+fun main(){
+ 
+  val p1=Person("neil" , 21)
+  println(p1.name)
+  println(p1.age)
+  println(p1.canvote)
+}
+class Person(name:String , age:Int)
+{
+    val name:String="$name - clan"
+    var age:Int=age
+    var canvote:Boolean=age>18
+}
+
+
+
+//initializer block->      if we want after creating and printing the objects we want to print a statement or set of statements then we use it we dont have to call it 
+fun main(){
+ 
+  val p1=Person("neil" , 21)
+  println(p1.name)
+  println(p1.age)
+  println(p1.canvote)
+}
+class Person(name:String , age:Int)
+{
+    init{
+        println("$name is created")
+    }
+    val name:String="$name - clan"
+    var age:Int=age
+    var canvote:Boolean=age>18
+}
+
+
+//secondary constructor use->  suppose we want to make 100 objects of a class known as car now one of the prperty of this class is tyre now the tyre of all the car is 4 so here secondary constructor is use we give the value of tyre in secondary constructor and it will assign this value to all
+fun main(){
+    val car1=Car(name= "car11" )
+    println(car1.name)
+    println(car1.tyres)
+}
+class Car(val name:String , val tyres:Int)
+{
+    //secondary constructor
+    constructor(name:String): this(name , tyres= 4)
+    {
+       
+    }
+}
