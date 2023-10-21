@@ -1,0 +1,41 @@
+fun main(){
+    //how to make objects
+    val alto=Car(name="alto" , model=2005 , kmrun=2000 )
+    println(alto.name)
+    println(alto.model)
+    println(alto.kmrun)
+//how to access function
+    alto.drivecar()
+}
+// how to make a class
+class Car (val name:String , val model:Int , var kmrun: Int)
+{
+    //how to make methods or functions
+    fun drivecar()
+    {
+//by writing $name it prints the car name also which is alto
+        println("$name car is driving")
+    }
+    
+    fun applybrakes()
+    {
+        println("brakes are applied")
+    }
+}
+
+
+
+
+//another function on classes and objects
+fun main(){
+    val p1=Person(name="mohan" , age=17)
+    println(p1.canvote())
+  
+}
+class Person (val name:String , var age:Int)
+{
+    fun canvote():Boolean
+    {
+        return age>18
+    }
+}
